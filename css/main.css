@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --background--color: #53a1eb;
+    --heading-background: #e2e9f0;
+    --main-color: #7f7a75;
+    --main-transtion: 0.3s;
+}
+
+body {
+    text-transform: capitalize;
+    background-color: var(--secand-background);
+    direction: rtl;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: var(--background--color);
+    width: 100%;
+    height: 60px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    padding: 25px;
+    font-size: 25px;
+    color: white;
+    transition: var(--main-transtion);
+    -webkit-transition: var(--main-transtion);
+    -moz-transition: var(--main-transtion);
+    -ms-transition: var(--main-transtion);
+    -o-transition: var(--main-transtion);
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.heading {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.heading p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--background--color);
+}
+
+.contant {
+    margin: 5px 20px;
+}
+
+.contant h1 {
+    text-align: center;
+    background-color: var(--heading-background);
+    padding: 10px;
+    color: #53a1eb;
+}
+
+.contant h3 {
+    background-color: var(--heading-background);
+    padding: 10px;
+    color: #53a1eb;
+}
+
+.contant p {
+    line-height: 1.6;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.parent .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--background--color);
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width: 600px) {
+    .heading img {
+        width: 168px;
+    }
+
+    .links ul li a {
+        padding: 5px;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 600px) {
+
+    .heading img {
+        width: 280px;
+    }
+
+    .links ul li a {
+        padding: 17px;
+        font-size: 25px
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .heading img {
+        width: 380px;
+    }
+
+    .links ul li a {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .heading img {
+        width: 450px;
+    }
+
+    .links ul li a {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .heading img {
+        width: 550px;
+    }
+}
